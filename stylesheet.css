@@ -6,7 +6,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;600;700&display=swap');
 
 html {
-    overflow: hidden;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -60,13 +59,6 @@ body {
 }
 
 
-
-.right-section {
-    width: 65%;
-    height: 100%;
-    flex: 1 1 auto;
-}
-
 .left-section {
     height: 100%;
     position: relative;
@@ -76,7 +68,7 @@ body {
     display: flex;
     position: absolute;
     top: 17.5%;
-    font-size: 100px;
+    font-size: 6rem;
     font-weight: 700;
     font-family: Source Sans Pro, Verdana, Geneva, Tahoma, sans-serif;    
     height: 200px;
@@ -90,8 +82,38 @@ body {
 
 .icon {
 
-    width: 128px;
-    height: 128px;
+    width: 100px;
+    height: 100px;
     margin-right: 16px;
 
+}
+
+
+
+.right-section {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-text, .sub-text {
+    flex: 1;
+    background-color: #FFD524;
+    font-family: Source Sans Pro, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    padding: 32px;
+    font-weight: 700;
+    color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
